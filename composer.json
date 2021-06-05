@@ -1,37 +1,45 @@
 {
   "name": "zerosonesfun/flarum-tldr",
-  "description": "A BBCode which summarizes text.",
-  "keywords": [
-    "flarum"
-  ],
+  "description": "A BBCode which summarizes text. [tldr][/tldr]",
   "type": "flarum-extension",
+  "keywords": ["discussion", "flarum", "bbcode", "summary"],
   "license": "MIT",
-  "require": {
-    "flarum/core": "^1.0"
-  },
   "authors": [
-    {
-      "name": "Billy Wilcosky",
-      "email": "wilcosky@gmail.com",
-      "role": "Developer"
-    }
+      {
+          "name": "Billy Wilcosky",
+          "homepage": "https://www.wilcosky.com",
+          "role": "Creator"
+      }
   ],
+  "support": {
+      "issues": "https://github.com/zerosonesfun/flarum-tldr/issues",
+      "source": "https://github.com/zerosonesfun/flarum-tldr",
+      "forum": "https://discuss.flarum.org"
+  },
+  "homepage": "https://www.wilcosky.com",
+  "funding": [
+      {
+          "type": "website",
+          "url": "https://www.wilcosky.com"
+      }
+  ],
+  "require": {
+      "flarum/core": "^1.0"
+  },
   "autoload": {
-    "psr-4": {
-      "Zerosonesfun\\Tldr\\": "src/"
-    }
+      "psr-4": {
+          "ZerosOnesFun\\Tldr\\": "src/"
+      }
   },
   "extra": {
-    "flarum-extension": {
-      "title": "TLDR",
-      "icon": {
-        "name": "",
-        "backgroundColor": "",
-        "color": ""
+      "flarum-extension": {
+          "title": "BBCode - TLDR",
+          "category": "feature",
+          "icon": {
+              "name": "fas fa-glasses",
+              "backgroundColor": "#ddd",
+              "color": "#000"
+          }
       }
-    },
-    "flagrow": {
-      "discuss": ""
-    }
   }
 }
