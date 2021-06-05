@@ -91,7 +91,7 @@ module.exports =
 /*!******************!*\
   !*** ./forum.js ***!
   \******************/
-/*! no static exports found */
+/*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -179,7 +179,7 @@ var Magic = /*#__PURE__*/function (_Component) {
     Object(flarum_extend__WEBPACK_IMPORTED_MODULE_1__["extend"])(flarum_common_components_PostStream__WEBPACK_IMPORTED_MODULE_3___default.a.prototype, 'view', function (vnode) {
       if (vnode.children && vnode.children.splice) {
         var insert = m("script", {
-          src: "../assets/extensions/zerosonesfun-tldr/tldr.js"
+          src: "/assets/extensions/zerosonesfun-tldr/tldr.js"
         });
         vnode.children.splice(1, 0, insert);
       }
@@ -210,13 +210,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var flarum_common_extend__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var flarum_common_ForumApplication__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! flarum/common/ForumApplication */ "flarum/common/ForumApplication");
 /* harmony import */ var flarum_common_ForumApplication__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_common_ForumApplication__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Tldr__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Tldr */ "./src/forum/components/Tldr.js");
+/* harmony import */ var _components_Tldr__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Tldr */ "./src/forum/components/Tldr.js");
 
 
 
 app.initializers.add('zerosonesfun/flarum-tldr', function () {
   Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_common_ForumApplication__WEBPACK_IMPORTED_MODULE_1___default.a.prototype, 'mount', function () {
-    m.mount(document.body.appendChild, _components_Tldr__WEBPACK_IMPORTED_MODULE_3__["default"]);
+    m.mount(document.body.appendChild, _components_Tldr__WEBPACK_IMPORTED_MODULE_2__["default"]);
   });
 });
 

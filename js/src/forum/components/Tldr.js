@@ -7,7 +7,7 @@ export default class Magic extends Component {
         super.oninit(vnode);
             extend(PostStream.prototype, 'view', function(vnode) {
                 if (vnode.children && vnode.children.splice) {
-                    const insert = <script src="../assets/extensions/zerosonesfun-tldr/tldr.js"></script>;
+                    const insert = <script src="/assets/extensions/zerosonesfun-tldr/tldr.js"></script>;
                     vnode.children.splice(1, 0, insert);
                   }
               });
