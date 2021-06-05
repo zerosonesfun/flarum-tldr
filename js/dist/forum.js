@@ -179,7 +179,7 @@ var Magic = /*#__PURE__*/function (_Component) {
     Object(flarum_extend__WEBPACK_IMPORTED_MODULE_1__["extend"])(flarum_common_components_PostStream__WEBPACK_IMPORTED_MODULE_3___default.a.prototype, 'view', function (vnode) {
       if (vnode.children && vnode.children.splice) {
         var insert = m("script", {
-          src: "/assets/extensions/zerosonesfun-tldr/tldr.js"
+          src: "../assets/extensions/zerosonesfun-tldr/tldr.js"
         });
         vnode.children.splice(1, 0, insert);
       }
